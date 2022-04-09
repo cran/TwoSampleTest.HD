@@ -4,9 +4,13 @@
 \alias{TwoSampleTest.HD}
 \title{A two-sample test for the equality of distributions for high-dimensional data}
 \usage{
-TwoSampleTest.HD(X, Y, method = c("spect", "spect_ind", "boot", "us",
-  "us_ind", "perm"), I.permutation.p.values = FALSE,
-  b_I.permutation.p.values = c("global", "individual"))
+TwoSampleTest.HD(
+  X,
+  Y,
+  method = c("spect", "spect_ind", "boot", "us", "us_ind", "perm"),
+  I.permutation.p.values = FALSE,
+  b_I.permutation.p.values = c("global", "individual")
+)
 }
 \arguments{
 \item{X}{A matrix where each row is one of the p-samples in the first group.}

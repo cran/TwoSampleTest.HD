@@ -29,12 +29,12 @@ things.
 \details{
 Package ‘TwoSampleTest.HD’
 
-Documentation for package ‘TwoSampleTest.HD’ version 1.0
+Documentation for package ‘TwoSampleTest.HD’ version 1.1
 
 
 \itemize{
 \item{Package: ‘TwoSampleTest.HD’}
-\item{Version: 1.0}
+\item{Version: 1.1}
 \item{Maintainer: Marta Cousido Rocha \email{martacousido@uvigo.es}}
 \item{License: GPL-2}
 }

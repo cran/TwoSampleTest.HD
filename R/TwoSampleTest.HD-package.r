@@ -1,6 +1,6 @@
 #' Package ‘TwoSampleTest.HD’
 #'
-#' Documentation for package ‘TwoSampleTest.HD’ version 1.0
+#' Documentation for package ‘TwoSampleTest.HD’ version 1.1
 #' @aliases TwoSampleTest.HDpackage
 #' @title A two-sample test for the equality of distributions for high-dimensional data
 #'
@@ -22,7 +22,7 @@
 #' @details
 #' \itemize{
 #' \item{Package: ‘TwoSampleTest.HD’}
-#' \item{Version: 1.0}
+#' \item{Version: 1.1}
 #' \item{Maintainer: Marta Cousido Rocha \email{martacousido@@uvigo.es}}
 #' \item{License: GPL-2}
 #' }

@@ -531,7 +531,7 @@ TwoSampleTest.HD <- function(X, Y, method = c("spect", "spect_ind", "boot", "us"
     s_spectral
   }
 
-  if(method == "us" | method == "us_ind") {
+  if(method == "us") {
     ### Serfling Dirichlet
 
     ### Variance of the statistic (save in memory and access to it)
@@ -555,7 +555,7 @@ TwoSampleTest.HD <- function(X, Y, method = c("spect", "spect_ind", "boot", "us"
 
     var_est_ind <- variance_est_ind(X, Y, h) ### save in memory
     s_est_ind <- e / sqrt(unlist(var_est_ind)) ### show
-    pvalor_est_ind <- 1 - stats::pnorm(s_est_Dirichlet) ### show
+    pvalor_est_ind <- 1 - stats::pnorm(s_est_ind) ### show
   }
 
   if (method == "spect_ind") {
