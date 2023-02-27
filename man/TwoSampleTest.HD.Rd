@@ -25,7 +25,7 @@ TwoSampleTest.HD(
 }
 \value{
 A list containing the following components:
-\item{standarized statistic: }{the value of the standarized statistic.}
+\item{standardized statistic: }{the value of the standardized statistic.}
 \item{p.value: }{the p-value for the test.}
 \item{statistic: }{the value of the statistic.}
 \item{variance: }{the value of the variance estimator.}

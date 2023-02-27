@@ -46,7 +46,7 @@
 #' @param b_I.permutation.p.values The method used to compute the individual statistics on which are based the permutation p-values. Default is “global”. See details.
 #'
 #' @return A list containing the following components:
-#' \item{standarized statistic: }{the value of the standarized statistic.}
+#' \item{standardized statistic: }{the value of the standardized statistic.}
 #' \item{p.value: }{the p-value for the test.}
 #' \item{statistic: }{the value of the statistic.}
 #' \item{variance: }{the value of the variance estimator.}
@@ -194,7 +194,7 @@ TwoSampleTest.HD <- function(X, Y, method = c("spect", "spect_ind", "boot", "us"
 
   if (missing(b_I.permutation.p.values)) {
     b_I.permutation.p.values <- "global"
-    cat("'global' bandwith used by default\n")
+    cat("'global' bandwidth used by default\n")
   }
 
   method <- match.arg(method)
@@ -508,7 +508,7 @@ TwoSampleTest.HD <- function(X, Y, method = c("spect", "spect_ind", "boot", "us"
     ### Variance of the statistic (save in memory and access to it)
     var <- variance(J)
 
-    ### Standarized test statistic using the bootstrap method (show)
+    ### standardized test statistic using the bootstrap method (show)
     s <- e / sqrt((var))
 
     ### Corresponding p-value (show)
@@ -522,7 +522,7 @@ TwoSampleTest.HD <- function(X, Y, method = c("spect", "spect_ind", "boot", "us"
     ### Variance of the statistic (save in memory and access to it)
     var_spectral <- variance_spectral(J)
 
-    ### Standarized test statistic using the spectral method (show)
+    ### standardized test statistic using the spectral method (show)
     s_spectral <- (e) / sqrt((var_spectral))
 
     ### Corresponding p-value (show)
@@ -537,7 +537,7 @@ TwoSampleTest.HD <- function(X, Y, method = c("spect", "spect_ind", "boot", "us"
     ### Variance of the statistic (save in memory and access to it)
     var_est_Dirichlet <- variance_est_Dirichlet(X, Y, h, J)
 
-    ### Standarized test statistic using the Serfling Dirichlet method (show)
+    ### standardized test statistic using the Serfling Dirichlet method (show)
     s_est_Dirichlet <- e / sqrt((var_est_Dirichlet))
 
     ### Corresponding p-value (show)
@@ -692,7 +692,7 @@ TwoSampleTest.HD <- function(X, Y, method = c("spect", "spect_ind", "boot", "us"
     var_pv_sR <- variance_spectralR(pv)
 
 
-    ### Non standarized statistic
+    ### Non standardized statistic
     pv_ <- mean(pv)
     N <- n + m
     if (m == n) {
@@ -704,7 +704,7 @@ TwoSampleTest.HD <- function(X, Y, method = c("spect", "spect_ind", "boot", "us"
     nm
     mean_p <- ((nm + 1) / nm) * 0.5
 
-    ### Standarized statistic (show)
+    ### standardized statistic (show)
     s_sR <- ((pv_ - mean_p) * sqrt(p)) / sqrt((var_pv_sR))
 
     ### Corresponding p-value
@@ -714,7 +714,7 @@ TwoSampleTest.HD <- function(X, Y, method = c("spect", "spect_ind", "boot", "us"
 
   statistic <- switch(method, spect = s_spectral, spect_ind = s_spectral_ind,
                       boot = s, us = s_est_Dirichlet, us_ind = s_est_ind, perm = s_sR)
-  names(statistic) <- "standarized statistic"
+  names(statistic) <- "standardized statistic"
 
   statistic2 <- switch(method, spect = e, spect_ind = e,  boot = e, us = e, us_ind = e,
                        perm = (pv_)*sqrt(p))

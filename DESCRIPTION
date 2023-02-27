@@ -1,7 +1,7 @@
 Package: TwoSampleTest.HD
 Title: A Two-Sample Test for the Equality of Distributions for
         High-Dimensional Data
-Version: 1.1
+Version: 1.2
 Authors@R: c(
   person("Marta", "Cousido Rocha", email = "martacousido@uvigo.es", role = c("aut", "cre")),
   person("José Carlos", "Soage González", email = "jsoage@uvigo.es", role = "ctr"),
@@ -12,12 +12,12 @@ Description: For high-dimensional data whose main feature is a large number, p, 
 Depends: R (>= 3.5.0)
 License: GPL-2
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2022-04-09 14:16:59 UTC; mcousido
+Packaged: 2023-02-27 07:10:23 UTC; mcousido
 Author: Marta Cousido Rocha [aut, cre],
   José Carlos Soage González [ctr],
   Jacobo de Uña Álvarez [aut, ths],
   Jeffrey D. Hart [aut]
 Repository: CRAN
-Date/Publication: 2022-04-09 15:52:29 UTC
+Date/Publication: 2023-02-27 09:12:33 UTC

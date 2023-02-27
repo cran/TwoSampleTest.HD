@@ -1,6 +1,6 @@
 #' Package ‘TwoSampleTest.HD’
 #'
-#' Documentation for package ‘TwoSampleTest.HD’ version 1.1
+#' Documentation for package ‘TwoSampleTest.HD’ version 1.2
 #' @aliases TwoSampleTest.HDpackage
 #' @title A two-sample test for the equality of distributions for high-dimensional data
 #'
@@ -15,14 +15,14 @@
 #' samples. The last method is an alternative global test whose statistic averages the p-values derived from
 #' applying permutation tests to the individual statistics mentioned above. When the global null hypothesis
 #' is rejected such permutation p-values can also be used to identify which variables contribute to this
-#' significance. The standarized version of each test statistic and its p-value are computed among other
+#' significance. The standardized version of each test statistic and its p-value are computed among other
 #' things.
 #'
 #'
 #' @details
 #' \itemize{
 #' \item{Package: ‘TwoSampleTest.HD’}
-#' \item{Version: 1.1}
+#' \item{Version: 1.2}
 #' \item{Maintainer: Marta Cousido Rocha \email{martacousido@@uvigo.es}}
 #' \item{License: GPL-2}
 #' }
